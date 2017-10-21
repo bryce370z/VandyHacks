@@ -8,20 +8,31 @@
   <input type="submit" value="Submit" [navPush]="tabsPage">
 </form>
 -->
+<ion-header>
 
-<!--<form [formGroup]="login" (ngSubmit)="loginForm()">
+  <ion-navbar>
+    <ion-title>Tour App</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <p > Log In </p>
+
+<form [formGroup]="login" (ngSubmit)="loginForm()" padding>
   <ion-item>
 
     <ion-label>Username: </ion-label>
     <ion-input type="text" formControlName="username"></ion-input>
   </ion-item>
 
-
   <ion-item>
     <ion-label>Password: </ion-label>
     <ion-input type="text" formControlName="password"></ion-input>
   </ion-item>
-<button ion-button type="submit" [disabled]="!todo.valid">Log In</button>
+<button ion-button type="submit" [disabled]="!login.valid">Log In</button>
 </form>
--->
-<button ion-button [navPush]="tabsPage"> PUSH ME </button>
+</ion-content>
+
+
+<!--<button ion-button [navPush]="tabsPage"> PUSH ME </button>-->

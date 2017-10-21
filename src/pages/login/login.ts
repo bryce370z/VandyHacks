@@ -12,13 +12,18 @@ export class LoginPage{
   tabsPage = TabsPage;
   private login: FormGroup;
   constructor(private formBuilder: FormBuilder, public navCtrl: NavController){
-  //  this.login = this.formBuilder.group({
-  //    username: ['',Validators.required],
-  //    password: ['', Validators.required]
+    this.login = this.formBuilder.group({
+      username: ['',Validators.required],
+      password: ['', Validators.required]
 
-  //  });
-//  }
-//  loginForm(){
-//    this.navCtrl.push(TabsPage);
+   });
+  }
+  loginForm(){
+
+      //TODO: login form login goes here! something like this.username & this.p
+      this.navCtrl.push(TabsPage);
+
+
+
   }
 }
