@@ -9,7 +9,7 @@
 </form>
 -->
 
-<form [formGroup]="login" (ngSubmit)="loginForm()">
+<!--<form [formGroup]="login" (ngSubmit)="loginForm()">
   <ion-item>
 
     <ion-label>Username: </ion-label>
@@ -23,3 +23,5 @@
   </ion-item>
 <button ion-button type="submit" [disabled]="!todo.valid">Log In</button>
 </form>
+-->
+<button ion-button [navPush]="tabsPage"> PUSH ME </button>
